@@ -1,0 +1,4 @@
+name: notion-local-tools
+kind: model-provider
+version: 0.1.0
+description: Notion text bridge with native Hermes local file tools

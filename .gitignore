@@ -1,0 +1,12 @@
+.env
+.env.*
+.credentials*
+__pycache__/
+*.pyc
+*.log
+*.tgz
+.DS_Store
+acceptance/
+backups/
+hermes-acceptance/
+package-verification/
