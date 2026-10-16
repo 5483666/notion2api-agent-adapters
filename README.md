@@ -1,6 +1,8 @@
-# Hermes · notion2api 本地工具
+# notion2api · 各类 Agent 本地工具适配
 
-通过用户自己的 notion2api 接口，让 Hermes 使用原生工具读写本机文件。保留 Sonnet 5.5 / Opus 5.5，提供独立 profile 的安装与验收方法，以及供 OpenCode、pi 等客户端参考的适配思路。
+供 agent 或开发者把用户自己的 notion2api 接口适配到其电脑上的客户端，实现真实本地文件读写。先与用户明确目标客户端，再按其当前扩展接口操作。
+
+本仓库提供通用适配方法和 Hermes 参考实现，保留 Sonnet 5.5 / Opus 5.5。DSH 插件在独立仓库维护，此处不存放 DSH 插件。
 
 | 内容 | 入口 |
 | --- | --- |
@@ -18,7 +20,7 @@
 
 ```text
 请根据这个仓库，在我自己的电脑上安装或适配 notion2api 本地工具：
-https://github.com/5483666/hermes-notion-local-tools
+https://github.com/5483666/notion2api-agent-adapters
 
 第一步先问我：这次要适配哪个客户端（DSH、Hermes、OpenCode、pi 或其他）？等我明确确认后再安装或改配置，不要按你自己的运行环境或仓库名猜测，也不要同时修改其他客户端。
 
@@ -34,8 +36,8 @@ https://github.com/5483666/hermes-notion-local-tools
 ## 获取源码
 
 ```bash
-git clone https://github.com/5483666/hermes-notion-local-tools.git
-cd hermes-notion-local-tools
+git clone https://github.com/5483666/notion2api-agent-adapters.git
+cd notion2api-agent-adapters
 ```
 
 确认目标是 Hermes 后，按 [Hermes 安装说明](hermes/README.md) 操作；插件位于 `hermes/` 子目录，不能把仓库根目录直接交给 Hermes 插件安装器。其他客户端请阅读[通用适配方法](docs/PORTING.md)。

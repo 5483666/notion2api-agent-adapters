@@ -31,7 +31,7 @@
 
    默认 home 通常为 `~/.hermes`，命名 profile 通常在其 `profiles/` 下；实际路径以用户本机设置为准，不要假定默认 home 就是所选 profile。建议在发现目录外准备完整文件后原子移入，避免加载半份插件。
 
-   **不要直接运行 `hermes plugins install 5483666/dsh-notion-local-tools`。** 这是多客户端仓库，仓库根目录是 DSH 包；Hermes 插件位于 `hermes/`。当前提供手动目录安装方法，没有宣称根仓库可由 Hermes 插件安装器直接安装。
+   **不要直接运行 `hermes plugins install 5483666/notion2api-agent-adapters`。** 这是多客户端适配仓库，根目录没有 Hermes 插件清单；Hermes 插件位于 `hermes/`。当前提供手动目录安装方法，没有宣称根仓库可由 Hermes 插件安装器直接安装。
 
 4. 让用户在本机私密输入请求地址和 key，使用该版本 Hermes 原生私密设置服务，写入所选 profile 的两个专用连接项：
 
