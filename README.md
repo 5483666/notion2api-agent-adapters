@@ -8,7 +8,7 @@
 | --- | --- |
 | Hermes 提供商源码、安装、测试与回滚 | [Hermes 说明](hermes/README.md) |
 | 通用协议、客户端入口与验收方法 | [适配指南](docs/PORTING.md) |
-| DSH 插件（独立仓库） | [dsh-notion-local-tools](https://github.com/5483666/dsh-notion-local-tools) |
+| DSH 插件（独立仓库） | [dsh-notion-local-tools](https://github.com/7827666/dsh-notion-local-tools) |
 
 **OpenCode、pi 尚无本仓库可直接安装的实现，未完成实机验收。** 需要按各自当前接口适配，不能直接安装 Hermes 插件。
 
@@ -20,11 +20,11 @@
 
 ```text
 请根据这个仓库，在我自己的电脑上安装或适配 notion2api 本地工具：
-https://github.com/5483666/notion2api-agent-adapters
+https://github.com/7827666/notion2api-agent-adapters
 
 第一步先问我：这次要适配哪个客户端（DSH、Hermes、OpenCode、pi 或其他）？等我明确确认后再安装或改配置，不要按你自己的运行环境或仓库名猜测，也不要同时修改其他客户端。
 
-确认目标后，读取仓库 README、对应客户端说明及 docs/PORTING.md，核对本机版本、实际 profile 和工作目录。Hermes 使用本仓库已有实现；若选择 DSH，转到 https://github.com/5483666/dsh-notion-local-tools 。其他客户端按当前官方接口适配，不能把“有参考代码”当成“已支持”。不兼容时先说明。
+确认目标后，读取仓库 README、对应客户端说明及 docs/PORTING.md，核对本机版本、实际 profile 和工作目录。Hermes 使用本仓库已有实现；若选择 DSH，转到 https://github.com/7827666/dsh-notion-local-tools 。其他客户端按当前官方接口适配，不能把“有参考代码”当成“已支持”。不兼容时先说明。
 
 保留现有配置、默认模型与权限，修改前备份，不中断现有任务。保留 Sonnet 5.5 和 Opus 5.5 选项；请求地址和 API key 让我在本机私密输入，按对应客户端的私密连接机制处理，不要写入聊天、日志或公开内容。
 
@@ -36,7 +36,7 @@ https://github.com/5483666/notion2api-agent-adapters
 ## 获取源码
 
 ```bash
-git clone https://github.com/5483666/notion2api-agent-adapters.git
+git clone https://github.com/7827666/notion2api-agent-adapters.git
 cd notion2api-agent-adapters
 ```
 

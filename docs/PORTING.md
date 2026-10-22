@@ -43,7 +43,7 @@ flowchart LR
 4. 按目标客户端转换调用、增量、块结束与完成原因。上游先整体返回、再合成流事件时，要如实说明不是逐 token 上游流。
 5. 注册模型只暴露实际支持的能力。当前代码提供 Sonnet 5.5 / Opus 5.5 文本与工具能力；其他模型即使出现在远端目录，也需另行验证。
 
-DSH 代码见 [`adapter.mjs`](https://github.com/5483666/dsh-notion-local-tools/blob/main/adapter.mjs) 的 `encodeRequest` / `decodeReply`；Hermes 代码见 [`notion_bridge.py`](../hermes/notion_bridge.py) 的 `encode_request` / `decode_reply`。两者采用相同思路，但宿主的配置、消息与事件格式各自独立；不能直接把一个客户端的插件目录装给另一个。
+DSH 代码见 [`adapter.mjs`](https://github.com/7827666/dsh-notion-local-tools/blob/main/adapter.mjs) 的 `encodeRequest` / `decodeReply`；Hermes 代码见 [`notion_bridge.py`](../hermes/notion_bridge.py) 的 `encode_request` / `decode_reply`。两者采用相同思路，但宿主的配置、消息与事件格式各自独立；不能直接把一个客户端的插件目录装给另一个。
 
 ## 选择目标客户端入口
 
